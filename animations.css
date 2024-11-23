@@ -22,7 +22,7 @@
     transform: translateX(0);
 }
 
-/* Fade up animation */
+/* Fade-up animation */
 .fade-up.hidden {
     transform: translateY(50px);
 }
@@ -40,7 +40,7 @@
     transform: scale(1);
 }
 
-/* Add smooth transitions to interactive elements */
+/* Testimonial card hover effect */
 .test-item {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -49,15 +49,15 @@
     transform: translateY(-10px);
 }
 
-.projects-item {
+.projects-conationer {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.projects-item:hover {
+.projects-container:hover {
     transform: translateY(-10px);
 }
 
-/* Optional: Add animation to navbar on scroll */
+/* Navbar scroll effect */
 #navbar {
     transition: all 0.3s ease;
 }
@@ -67,14 +67,30 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Ensure animations don't play for users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    .hidden {
-        transition: none;
-    }
-    
-    .test-item,
-    .projects-item {
-        transition: none;
-    }
+/* Button animations */
+.buttons .btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.buttons .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.buttons .btn:hover::after {
+    transform: translateX(0);
 }
