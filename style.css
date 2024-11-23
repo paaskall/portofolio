@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap");
 
 body {
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #121212; /* Background */
+  color: #ffffff; /* Text */
 }
 
 * {
@@ -23,7 +23,7 @@ body {
   border-bottom: 0.5px solid #ffffff52;
   border-width: 80%;
   margin-bottom: 1rem;
-  background-color: #000000;
+  background-color: #000000; /* Primary */
 }
 
 #navbar ul {
@@ -36,7 +36,7 @@ body {
 
 #navbar ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff; /* Text */
   padding: 0.5rem 0.9rem;
 }
 
@@ -54,8 +54,8 @@ body {
 
 .nav-col a:hover {
   border-radius: 0.4rem;
-  color: #000000;
-  background-color: #fff;
+  color: #000000; /* Primary */
+  background-color: #ffffff; /* Text */
 }
 
 /* Home Section */
@@ -71,7 +71,7 @@ body {
 
 .home-left h6,
 h4 {
-  color: color: #ffffff;
+  color: #ffffff; /* Text */
   margin: 1rem 0;
   margin-left: 3px;
   font-size: 1.2rem;
@@ -79,7 +79,7 @@ h4 {
 
 .home-left h1 {
   font-size: 2.5rem;
-  color: #1db954;
+  color: #1db954; /* Secondary */
 }
 
 .home-right {
@@ -137,8 +137,8 @@ h4 {
 .test-item {
   width: 20rem;
   margin: 0 2rem;
-  background: #000000;
-  border: 0.5px solid #1db954;
+  background: #000000; /* Primary */
+  border: 0.5px solid #1db954; /* Secondary */
   border-radius: 1.5rem;
   padding: 2rem 1rem;
   text-align: center;
@@ -146,8 +146,8 @@ h4 {
 }
 
 .test-item:hover {
-  background-color: #1db954;
-  color: #000000;
+  background-color: #1db954; /* Secondary */
+  color: #000000; /* Primary */
 }
 
 .test-item img {
@@ -162,7 +162,7 @@ h4 {
 
 .services li .fa-solid {
   font-size: 2rem;
-  color: white;
+  color: #ffffff; /* Text */
   margin-bottom: 1.3rem;
 }
 
@@ -205,11 +205,11 @@ h4 {
   overflow: hidden;
   width: 20rem;
   margin: 1rem;
-  background: #000000;
+  background: #000000; /* Primary */
   border-radius: 1.5rem;
   padding: 2rem 1rem;
   text-align: center;
-  border: 0.5px solid #1db954;
+  border: 0.5px solid #1db954; /* Secondary */
 }
 
 .projects-item:hover {
@@ -239,7 +239,7 @@ h4 {
 
 .form-div input,
 textarea {
-  border: 2px solid rgba(77, 181, 255, 0.4);
+  border: 2px solid #1db954; /* Changed from rgba(77, 181, 255, 0.4) to Secondary */
   border-radius: 0.5rem;
   width: 100%;
   margin: 0.5rem 0rem;
@@ -247,13 +247,13 @@ textarea {
   background: transparent;
   margin: 0.5rem 0rem;
   padding: 0.5rem 1rem;
-  color: white;
+  color: #ffffff; /* Text */
   resize: none;
 }
 
 /* Footer Section  */
 #footer {
-  background-color: #000000;
+  background-color: #000000; /* Primary */
   padding: 2rem;
   padding-bottom: 4rem;
 }
@@ -266,12 +266,12 @@ ul li {
 ul li a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #1db954;
+  color: #1db954; /* Secondary */
   transition: all 0.5s;
 }
 
 ul li a:hover {
-  color: #e50914;
+  color: #e50914; /* Accent */
 }
 
 .font-awesome {
@@ -279,31 +279,31 @@ ul li a:hover {
 }
 
 .font-awesome li i {
-  background-color: #1f1f38;
+  background-color: #121212; /* Background */
   padding: 0.6rem;
-  border: 1px solid #1f1f38;
-  color: #000000;
+  border: 1px solid #121212; /* Background */
+  color: #000000; /* Primary */
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
 .font-awesome li i:hover {
-  border: 1px solid #1f1f38;
+  border: 1px solid #121212; /* Background */
   border-radius: 0.5rem;
   background: transparent;
-  color: #e50914;
+  color: #e50914; /* Accent */
 }
 
 #footer p {
-  color: #1f1f38;
+  color: #121212; /* Background */
   font-size: 0.9srem;
 }
 
 /* Scroll Top */
 #scroll-top {
-  background-color: #1db954;
-  color: #000000;;
+  background-color: #1db954; /* Secondary */
+  color: #000000; /* Primary */
   padding: 9px;
   border-radius: 9px;
   width: 35px;
@@ -334,14 +334,14 @@ ul li a:hover {
 #bottom .bottom-nav {
   height: 4rem;
   padding: 0 2rem;
-  background-color: #000000;
+  background-color: #000000; /* Primary */
   border-radius: 3rem;
   z-index: 1000;
   display: -webkit-inline-box;
 }
 
 #bottom .bottom-nav li {
-  color: #fff;
+  color: #ffffff; /* Text */
   width: 3rem;
   height: 3rem;
   cursor: pointer;
@@ -355,15 +355,15 @@ ul li a:hover {
 }
 
 #bottom .bottom-nav li:hover {
-  background-color: #1db954;
+  background-color: #1db954; /* Secondary */
 }
 
 #bottom .bottom-nav li:active {
-  background-color: #4db5ff;
+  background-color: #1db954; /* Secondary */
 }
 
 .cpy-white {
-  color: white;
+  color: #ffffff; /* Text */
 }
 
 /* Utility Classes */
@@ -404,11 +404,11 @@ ul li a:hover {
 }
 
 .t-white {
-  color: #fff;
+  color: #ffffff; /* Text */
 }
 
 .bg-color {
-  background-color: #1f1f38;
+  background-color: #121212; /* Background */
 }
 
 .t-center {
@@ -454,10 +454,10 @@ ul li a:hover {
 .btn {
   margin-left: 0 0.5rem;
   font-size: 1rem;
-  color: #4db5ff;
+  color: #1db954; /* Changed from #4db5ff to Secondary */
   cursor: pointer;
   padding: 0.75rem 1.2rem;
-  border: 1px solid #4db5ff;
+  border: 1px solid #1db954; /* Changed from #4db5ff to Secondary */
   border-radius: 0.4rem;
   background: transparent;
   font-family: "Poppins", sans-serif;
@@ -469,12 +469,12 @@ ul li a:hover {
 }
 
 .btn:hover {
-  color: #1f1f38;
-  border-color: #fff;
-  background-color: #fff;
+  color: #000000; /* Primary */
+  border-color: #ffffff; /* Text */
+  background-color: #ffffff; /* Text */
 }
 
 .live {
-  color: #1f1f38;
-  background-color: #4db5ff;
+  color: #000000; /* Primary */
+  background-color: #1db954; /* Secondary */
 }
