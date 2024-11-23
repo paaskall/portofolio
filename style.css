@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap");
 
 body {
-  background-color: #1f1f38;
+  background-color: linear-gradient(45deg, #8B5CF6, #EC4899);
 }
 
 * {
