@@ -478,3 +478,62 @@ ul li a:hover {
   color: #000000; /* Primary */
   background-color: #1db954; /* Secondary */
 }
+
+/* Animation Base Classes */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+/* Different animation delays for multiple elements */
+.delay-1 {
+  transition-delay: 200ms;
+}
+
+.delay-2 {
+  transition-delay: 400ms;
+}
+
+.delay-3 {
+  transition-delay: 600ms;
+}
+
+/* Animation variations */
+.slide-left.hidden {
+  transform: translateX(-100px);
+}
+
+.slide-right.hidden {
+  transform: translateX(100px);
+}
+
+.zoom.hidden {
+  transform: scale(0.5);
+}
+
+/* For smoother animations on cards/sections */
+.test-item,
+.projects-item,
+.about-content,
+.form {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Optional: Add hover animations */
+.test-item:hover,
+.projects-item:hover {
+  transform: translateY(-10px);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
