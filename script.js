@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', function() {
         item.classList.add('hidden', 'fade-up');
         item.style.transitionDelay = `${index * 200}ms`;
     });
+
+    // Project
+    const projectItems = document.querySelectorAll('.projects-container');
+    projectItems.forEach((item, index) => {
+        item.classList.add('hidden', 'fade-up');
+        item.style.transitionDelay = `${index * 200}ms`;
+    });
     
     // Add animation to contact form
     const contactForm = document.querySelector('.form');
