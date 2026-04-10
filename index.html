@@ -1,275 +1,1462 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags untuk SEO Google Search -->
-    <title>Paskal Arvito Weni</title>
-    <meta name="title" content="Paskal Arvito Weni">
-    <meta name="description" content="Paskal Arvito Weni adalah Software Developer dari Politeknik Negeri Ujung Pandang yang berfokus pada pengembangan website modern dan desain grafis kreatif. Lihat portfolio dan layanan profesional saya.">
-    <meta name="keywords" content="Paskal Arvito Weni, Paskal Arvito, Software Developer Makassar, Web Developer Indonesia, Graphic Designer, UI/UX Design, Portfolio Paskal, Politeknik Negeri Ujung Pandang, Software Developer Ujung Pandang">
+    <title>Paskal Arvito Weni - Software Developer</title>
+    <meta name="description" content="Paskal Arvito Weni adalah Software Developer dari Politeknik Negeri Ujung Pandang yang berfokus pada pengembangan website, mobile app, dan machine learning.">
+    <meta name="keywords" content="Paskal Arvito Weni, Software Developer Makassar, Web Developer Indonesia, Mobile App Developer, Machine Learning, UI/UX Design">
     <meta name="author" content="Paskal Arvito Weni">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="language" content="Indonesian, English">
-    <meta name="geo.region" content="ID">
-    <meta name="geo.placename" content="Makassar">
-    <meta property="og:image" content="parking.png">
-    <meta property="og:image:alt" content="Foto Paskal Arvito Weni">
+    <meta name="robots" content="index, follow">
     
-    <!-- Schema.org markup untuk Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Paskal Arvito Weni",
-      "url": "https://aboutpaskal.vercel.app/",
-      "image": "https://aboutpaskal.vercel.app/Foto(2).jpg",
-      "jobTitle": "Software Developer",
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "Politeknik Negeri Ujung Pandang"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/paskal-arvito-weni",
-        "https://www.instagram.com/paskalll_/",
-        "https://youtube.com/@paskaliitho1001",
-        "https://github.com/paaskall"
-      ]
-    }
-    </script>
-    
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://aboutpaskal.vercel.app">
-    <meta property="og:title" content="Paskal Arvito Weni">
-    <meta property="og:description" content="Paskal Arvito Weni adalah Software Developer dari Politeknik Negeri Ujung Pandang yang berfokus pada pengembangan website modern dan desain grafis kreatif. Lihat portfolio dan layanan profesional saya.">
+    <meta property="og:title" content="Paskal Arvito Weni — Software Developer">
+    <meta property="og:description" content="Software Developer dari Politeknik Negeri Ujung Pandang.">
     <meta property="og:image" content="https://aboutpaskal.vercel.app/parking.png">
-    <meta property="og:image:alt" content="Foto Paskal Arvito Weni">
-    <meta property="og:site_name" content="Portfolio Paskal Arvito Weni">
-    <meta property="profile:first_name" content="Paskal">
-    <meta property="profile:last_name" content="Arvito Weni">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Paskal Arvito Weni","url":"https://aboutpaskal.vercel.app/","jobTitle":"Software Developer","alumniOf":{"@type":"CollegeOrUniversity","name":"Politeknik Negeri Ujung Pandang"},"sameAs":["https://www.linkedin.com/in/paskal-arvito-weni","https://www.instagram.com/paskalll_/","https://github.com/paaskall"]}
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://paskalarvito.com/">
-    <meta name="twitter:title" content="Paskal Arvito Weni">
-    <meta name="twitter:description" content="Paskal Arvito Weni adalah Software Developer dari Politeknik Negeri Ujung Pandang yang berfokus pada pengembangan website modern dan desain grafis kreatif. Lihat portfolio dan layanan profesional saya.">
-    <meta name="twitter:image" content="https://aboutpaskal.vercel.app/Foto(2).jpg">
-    <meta name="twitter:image:alt" content="Foto Paskal Arvito Weni">
+    <!-- Google Fonts: Clash Display + DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./Images/parking.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./Images/apple-touch-icon.png">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://paskalarvito.com/">
-    <link rel="icon" href="parking.png" type="image/x-icon">
+
+    <script>
+        tailwind.config = {
+            darkMode: ['class', '[data-theme="dark"]'],
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#00ff87',
+                        'accent-dim': '#00cc6a',
+                        'accent-dark': '#009e53',
+                        dark: {
+                            900: '#050505',
+                            800: '#0a0a0a',
+                            700: '#111111',
+                            600: '#1a1a1a',
+                            500: '#222222',
+                        },
+                        light: {
+                            100: '#f9fafb',
+                            200: '#f0f2f5',
+                            300: '#e2e8f0',
+                            400: '#cbd5e1',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['DM Sans', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'fadeInUp': 'fadeInUp 0.7s ease forwards',
+                        'fadeInLeft': 'fadeInLeft 0.7s ease forwards',
+                        'fadeInRight': 'fadeInRight 0.7s ease forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        fadeInUp: {
+                            from: { opacity: '0', transform: 'translateY(40px)' },
+                            to: { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeInLeft: {
+                            from: { opacity: '0', transform: 'translateX(-40px)' },
+                            to: { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        fadeInRight: {
+                            from: { opacity: '0', transform: 'translateX(40px)' },
+                            to: { opacity: '1', transform: 'translateX(0)' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ===== ROOT VARIABLES ===== */
+        :root {
+            --accent: #00ff87;
+            --accent-dim: #00cc6a;
+            --bg: #050505;
+            --bg-card: #0f0f0f;
+            --bg-surface: #161616;
+            --text: #f1f1f1;
+            --text-muted: #888888;
+            --border: rgba(255,255,255,0.08);
+        }
+        [data-theme="light"] {
+            --accent: #009e53;
+            --accent-dim: #007a3f;
+            --bg: #f9fafb;
+            --bg-card: #ffffff;
+            --bg-surface: #f0f2f5;
+            --text: #111111;
+            --text-muted: #555555;
+            --border: rgba(0,0,0,0.08);
+        }
+
+        /* ===== BASE ===== */
+        * { scroll-behavior: smooth; box-sizing: border-box; }
+        html { font-family: 'DM Sans', sans-serif; }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            transition: background-color 0.4s ease, color 0.4s ease;
+            overflow-x: hidden;
+        }
+
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+        /* ===== NOISE TEXTURE OVERLAY ===== */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.4;
+        }
+        [data-theme="light"] body::before { opacity: 0.15; }
+
+        /* ===== SECTION LAYOUT ===== */
+        section { position: relative; z-index: 1; }
+
+        /* ===== ACCENT GLOW ===== */
+        .accent-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+            opacity: 0.15;
+        }
+
+        /* ===== NAVBAR ===== */
+        #navbar {
+            background: rgba(5,5,5,0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        [data-theme="light"] #navbar {
+            background: rgba(249,250,251,0.9);
+        }
+        #navbar.scrolled {
+            box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+        }
+        .nav-link {
+            position: relative;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.25rem 0;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover { color: var(--accent); }
+        .nav-link:hover::after { width: 100%; }
+
+        /* ===== HERO ===== */
+        #home {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 2rem;
+            padding: 6rem 8vw 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        @media (max-width: 768px) {
+            #home {
+                grid-template-columns: 1fr;
+                padding: 7rem 1.5rem 4rem;
+                text-align: center;
+            }
+        }
+
+        .hero-label {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+        .hero-label::before {
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 1px;
+            background: var(--accent);
+        }
+        @media (max-width: 768px) {
+            .hero-label { justify-content: center; }
+        }
+
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 7vw, 5.5rem);
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+        .hero-title .highlight {
+            color: var(--accent);
+            position: relative;
+        }
+        
+        .hero-sub {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-weight: 400;
+            color: var(--text-muted);
+            margin: 1.25rem 0 2.5rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .hero-btns { justify-content: center; }
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-primary {
+            background: var(--accent);
+            color: #000;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+            padding: 0.8rem 1.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-primary:hover {
+            background: var(--accent-dim);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,255,135,0.25);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--text);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+            padding: 0.8rem 1.8rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* ===== HERO IMAGE ===== */
+        .hero-img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hero-ring {
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,255,135,0.2);
+            animation: spin-slow 12s linear infinite;
+        }
+        .hero-ring-2 {
+            width: 280px;
+            height: 280px;
+            border: 1px dashed rgba(0,255,135,0.15);
+            animation: spin-slow 8s linear infinite reverse;
+        }
+        .hero-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            position: relative;
+            z-index: 2;
+            animation: float 6s ease-in-out infinite;
+        }
+        @media (max-width: 768px) {
+            .hero-img { width: 180px; height: 180px; }
+            .hero-ring { width: 240px; height: 240px; }
+            .hero-ring-2 { width: 200px; height: 200px; }
+        }
+
+        /* ===== SECTION HEADING ===== */
+        .section-label {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.8rem;
+            color: var(--accent);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            line-height: 1.1;
+        }
+        .section-divider {
+            display: block;
+            width: 3rem;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+            margin: 1.25rem 0 2.5rem;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        #about {
+            padding: 6rem 8vw;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        @media (max-width: 900px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        .about-img-wrap {
+            position: relative;
+        }
+        .about-img-wrap img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 1rem;
+            display: block;
+            position: relative;
+            z-index: 2;
+            filter: grayscale(20%);
+            transition: filter 0.4s ease;
+        }
+        .about-img-wrap:hover img { filter: grayscale(0%); }
+        .about-img-wrap::after {
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            right: -1.5rem;
+            bottom: -1.5rem;
+            border: 2px solid var(--accent);
+            border-radius: 1rem;
+            opacity: 0.3;
+            z-index: 1;
+            transition: opacity 0.4s ease;
+        }
+        .about-img-wrap:hover::after { opacity: 0.6; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        .stat-card:hover {
+            border-color: rgba(0,255,135,0.4);
+            transform: translateY(-4px);
+        }
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        /* ===== SKILLS ===== */
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .skill-tag {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.78rem;
+            color: var(--accent);
+            background: rgba(0,255,135,0.08);
+            border: 1px solid rgba(0,255,135,0.2);
+            border-radius: 0.375rem;
+            padding: 0.3rem 0.75rem;
+            transition: all 0.25s ease;
+        }
+        .skill-tag:hover {
+            background: rgba(0,255,135,0.15);
+            border-color: rgba(0,255,135,0.5);
+        }
+
+        /* ===== SERVICES ===== */
+        #services {
+            padding: 6rem 8vw;
+            background: var(--bg-surface);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: default;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover {
+            border-color: rgba(0,255,135,0.25);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(0,255,135,0.1);
+            border: 1px solid rgba(0,255,135,0.2);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover .service-icon {
+            background: rgba(0,255,135,0.2);
+            transform: scale(1.1);
+        }
+        .service-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        .service-desc {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        /* ===== PROJECTS ===== */
+        #projects {
+            padding: 6rem 8vw;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            border-color: rgba(0,255,135,0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        .project-img-wrap {
+            height: 11rem;
+            overflow: hidden;
+            background: var(--bg-surface);
+            position: relative;
+        }
+        .project-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .project-card:hover .project-img-wrap img {
+            transform: scale(1.08);
+        }
+        .project-tag {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.7rem;
+            background: rgba(0,255,135,0.15);
+            color: var(--accent);
+            border: 1px solid rgba(0,255,135,0.3);
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.25rem;
+        }
+        .project-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        .project-desc {
+            font-size: 0.875rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            flex: 1;
+            margin-bottom: 1.25rem;
+        }
+        .project-links {
+            display: flex;
+            gap: 0.75rem;
+        }
+        .project-link {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.4rem 0.9rem;
+            border-radius: 0.375rem;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .link-github {
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+        .link-github:hover { border-color: var(--accent); color: var(--accent); }
+        .link-live {
+            background: rgba(0,255,135,0.1);
+            border: 1px solid rgba(0,255,135,0.25);
+            color: var(--accent);
+        }
+        .link-live:hover {
+            background: var(--accent);
+            color: #000;
+        }
+
+        /* ===== CONTACT ===== */
+        #contact {
+            padding: 6rem 8vw;
+            background: var(--bg-surface);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
+            transition: all 0.25s ease;
+        }
+        .contact-info-item:hover {
+            border-color: rgba(0,255,135,0.3);
+            background: rgba(0,255,135,0.04);
+        }
+        .contact-icon {
+            width: 42px;
+            height: 42px;
+            background: rgba(0,255,135,0.1);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .contact-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+        .form-input {
+            width: 100%;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            transition: all 0.25s ease;
+            outline: none;
+        }
+        .form-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0,255,135,0.1);
+        }
+        .form-input::placeholder { color: var(--text-muted); opacity: 0.6; }
+        textarea.form-input { resize: vertical; min-height: 120px; }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 8vw;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 1rem;
+        }
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        .footer-links { display: flex; gap: 2rem; justify-content: center; }
+        .footer-link {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+        .footer-link:hover { color: var(--accent); }
+        .social-links { display: flex; gap: 0.75rem; justify-content: flex-end; }
+        @media (max-width: 600px) {
+            .social-links { justify-content: center; }
+        }
+        .social-link {
+            width: 38px;
+            height: 38px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.25s ease;
+        }
+        .social-link:hover {
+            background: rgba(0,255,135,0.1);
+            border-color: rgba(0,255,135,0.4);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* ===== THEME TOGGLE ===== */
+        #themeToggle {
+            position: fixed;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9999;
+            width: 56px;
+            height: 100px;
+            border-radius: 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            overflow: hidden;
+        }
+        #themeToggle:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0,255,135,0.15), 0 4px 24px rgba(0,0,0,0.3);
+        }
+        /* The sliding thumb */
+        .toggle-track {
+            position: absolute;
+            inset: 4px;
+            border-radius: 2.5rem;
+            pointer-events: none;
+        }
+        .toggle-thumb {
+            position: absolute;
+            left: 4px;
+            right: 4px;
+            height: calc(50% - 6px);
+            border-radius: 2rem;
+            background: var(--accent);
+            transition: top 0.4s cubic-bezier(0.34,1.56,0.64,1);
+            opacity: 0.15;
+        }
+        [data-theme="dark"] .toggle-thumb  { top: 4px; }
+        [data-theme="light"] .toggle-thumb { top: calc(50% + 2px); }
+        /* Icons */
+        .toggle-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            transition: all 0.35s ease;
+            position: relative;
+            z-index: 2;
+            color: var(--text-muted);
+        }
+        .toggle-icon.active {
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 0 12px rgba(0,255,135,0.4);
+        }
+        /* Dark mode → moon active (top); light mode → sun active (bottom) */
+        [data-theme="dark"]  .icon-moon { color: var(--accent); background: rgba(0,255,135,0.12); }
+        [data-theme="dark"]  .icon-sun  { color: var(--text-muted); background: transparent; }
+        [data-theme="light"] .icon-sun  { color: #000; background: var(--accent); box-shadow: 0 0 12px rgba(0,204,100,0.4); }
+        [data-theme="light"] .icon-moon { color: var(--text-muted); background: transparent; }
+
+        @media (max-width: 768px) {
+            #themeToggle {
+                top: 1rem;
+                right: 1rem;
+                transform: none;
+                width: 90px;
+                height: 40px;
+                flex-direction: row;
+                padding: 0 8px;
+                border-radius: 2rem;
+            }
+            [data-theme="dark"] .toggle-thumb  { top: 4px; left: 4px; width: calc(50% - 6px); height: calc(100% - 8px); right: auto; }
+            [data-theme="light"] .toggle-thumb { top: 4px; left: calc(50% + 2px); width: calc(50% - 6px); height: calc(100% - 8px); right: auto; }
+        }
+
+        /* ===== BOTTOM NAV (mobile) ===== */
+        #bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        @media (max-width: 768px) { #bottom-nav { display: block; } }
+        .bottom-nav-inner {
+            background: rgba(10,10,10,0.9);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 2rem;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        [data-theme="light"] .bottom-nav-inner {
+            background: rgba(255,255,255,0.9);
+        }
+        .bottom-nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.1rem;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.25s ease;
+        }
+        .bottom-nav-link:hover {
+            color: var(--accent);
+            background: rgba(0,255,135,0.1);
+        }
+
+        /* ===== SCROLL TO TOP ===== */
+        #scroll-top {
+            position: fixed;
+            bottom: 5.5rem;
+            right: 1.5rem;
+            width: 42px;
+            height: 42px;
+            background: var(--accent);
+            color: #000;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,255,135,0.3);
+        }
+        #scroll-top:hover { transform: translateY(-4px); }
+        @media (min-width: 769px) { #scroll-top { bottom: 1.5rem; } }
+
+        /* ===== SCROLL ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+
+        /* ===== CURSOR DOT ===== */
+        .cursor-dot {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, opacity 0.2s;
+        }
+        @media (max-width: 768px) { .cursor-dot { display: none; } }
+
+        /* ===== NOTIFICATION ===== */
+        .notification {
+            position: fixed;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--accent);
+            border-radius: 0.75rem;
+            padding: 1rem 1.5rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text);
+            z-index: 10000;
+            opacity: 0;
+            transform: translateX(60px);
+            transition: all 0.3s ease;
+            max-width: 300px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        .notification.show { opacity: 1; transform: translateX(0); }
+    </style>
 </head>
 <body>
-    
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <i class="fas fa-moon" id="themeIcon"></i>
-    </button>
 
-    <nav id="navbar" class="flex s-around bg-color">
-        <div class="left-nav">
-            <h2 class="t-white">Paskal Arvito</h2>
-        </div>
-        <div class="right-nav">
-            <ul class="flex">
-                <li><a href="#home" class="t-white roboto">Home</a></li>
-                <li><a href="#about" class="t-white roboto">About Me</a></li>
-                <li><a href="#services" class="t-white roboto">Services</a></li>
-                <li><a href="#projects" class="t-white roboto">Projects</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section id="bottom">
-        <div class="bottom-nav flex s-center items-center">
-            <ul class="flex s-around items-center">
-                <a href="#home">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-house"></i></li>
-                </a>
-                <a href="#about">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-user"></i></li>
-                </a>
-                <a href="#services">
-                    <li class="bottomo-hover flex s-center items-center">
-                        <i class="fa-solid fa-rocket"></i>
-                    </li>
-                </a>
-                <a href="#projects">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-code"></i></li>
-                </a>
-            </ul>
-        </div>
-    </section>
-    <section id="home" class="flex s-around sw-80 m-auto">
-        <div class="home-left flex items-center">
-            <div class="home-content">
-                <h6 class="poppinss">Hi, I'm</h6>
-                <h1 class="t-white">Paskal Arvito Weni</h1>
-                <h4 class="poppinss">Software Developer</h4>
-                <a href="https://github.com/paaskall" target="_blank"><button
-                        class="btn poppins">Github</button></a>
-                <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/paskal-arvito-weni/"
-                    target="_blank">Let's Talk </a>
-            </div>
-        </div>
-        <div class="home-right flex s-center items-center">
-            <div class="circle flex s-center items-center" id="mainImage">
-                <img src="Foto(2).jpg" alt="foto1">
-            </div>
+<!-- Cursor Dot -->
+<div class="cursor-dot" id="cursorDot"></div>
 
-        </div>
-    </section>
+<!-- Theme Toggle -->
+<button id="themeToggle" aria-label="Toggle theme">
+    <div class="toggle-track">
+        <div class="toggle-thumb"></div>
+    </div>
+    <div class="toggle-icon icon-moon" id="iconMoon"><i class="fas fa-moon"></i></div>
+    <div class="toggle-icon icon-sun" id="iconSun"><i class="fas fa-sun"></i></div>
+</button>
 
-    <section id="about">
-        <h1 class="t-center my-2 t-white f-2">About Me</h1>
-        <div class="about-container flex s-around ">
-            <div class=" about-left flex s-center items-center">
-                <img src="Foto(1).jpg" alt="" style="width: 50%;">
-            </div>
-
-            <div class="about-right flex">
-                <div class="about-content">
-                    <h1 class="t-white m-b-1 poppins">Paskal Arvito Weni</h1>
-                    <p class="t-white poppins">A self-tought Software Developer Politeknik Negeri Ujung Pandang for
-                        an opportunity in Software Development. Who is committed to study Software Development. Mindset to full fill the life with
-                        wonderful memories and knowledge.</p>
-                    <a class="btn live poppins" id="hireme" href="CV_Paskal_Arvito_Weni_2026.pdf" target="_blank">Curriculum Vitae</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services">
-     <h1 class=" t-center my-2 t-white f-2">Services</h1>
-        <div class="services-container flex s-center">
-            <div class="test-item flex f-col items-center">
-                <img src="7040859.jpg" alt="">
-                <h1 class="t-white poppins">Web Development Development</h1>
-                <p class="t-white poppins">Web Development is envolving everywhere. Every startup and every bussines
-                    have their own websites. As my passion I will help you to build your clean and fast website for your
-                    startup or your bussines.</p>
-            </div>
-            <div class="test-item flex f-col items-center">
-                <img src="Tiny graphic designer drawing with big pen on computer screen.jpg" alt="">
-                <h1 class="t-white poppins">Graphic Design</h1>
-                <p class="t-white poppins">Help build a strong brand image through cohesive design from marketing materials to social media 
-                    Catering to design needs for websites, social media, and other digital content, 
-                    Add unique visual elements through custom illustrations tailored to your preferences.</p>
-            </div>
-            <div class="test-item flex f-col items-center">
-                <img src="2001.i039.031_branding_isometric_concept_icons-10.jpg" alt="">
-                <h1 class="t-white poppins">Growth Strategies</h1>
-                <p class="t-white poppins">As a web developer also I will help your brand to grow up. I will provide
-                    the growth strategies for your brand. And also help in searching techniques for your brand.</p>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
-        <div class="projects-container flex s-center">
-            <div class="projects-item flex f-col s-center items-center">
-                <div class="image-container p-one">
-                    <img src="visitor.png" alt="test">
-                </div>
-                <h1 class="t-white poppins">Library Visitors Manajemen</h1>
-                <p class="t-white poppins"> Library Visitors Management System is a web-based application developed using the Laravel framework to make it easier to manage library visitor data. This system is designed to improve the efficiency of library administration by providing digital visitor recording features, monitoring visitor activities, and secure and structured data storage.</p>
-                <div class="buttons flex s-around">
-                    <a href="https://github.com/paaskall/LibraryVisitorsManagement"
-                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
-                    <a href="#" target="_blanks" class="btn m-top live">Live
-                        Link</a>
-                </div>
-            </div>
-            <div class="projects-item flex f-col s-center items-center">
-                <div class="image-container p-one">
-                    <img src="browser (1).png" alt="">
-                </div>
-                <h1 class="t-white poppins">RESTful Api Jagoan Terbang</h1>
-                <p class="t-white poppins">Jagoan Terbang is a RESTful API designed to manage air transportation services, such as flight ticket booking, flight schedule information, and user data management. These APIs are developed using modern technologies to ensure fast performance, high security, and ease of integration with third-party applications.</p>
-                <div class="buttons flex s-around">
-                    <a href="https://github.com/paaskall/RestFullAPI-JagoanTerbang" target="_blanks"
-                        class="btn mx-1 m-top">GitHub</a>
-                    <a href="#" target="_blanks" class="btn m-top live">Live
-                        Link</a>
-                </div>
-            </div>
-            <div class="projects-item flex f-col s-center items-center">
-                <div class="image-container p-two">
-                    <img src="shopping.png" alt="">
-                </div>
-
-                <h1 class="t-white poppins">Modern Shop</h1>
-                <p class="t-white poppins">Modern Shop is a simple e-commerce web application developed using HTML, CSS, and JavaScript. The project is designed to showcase a modern online shopping experience with interactive features that are responsive, easy to use, and aesthetically pleasing. Suitable as a small-scale shopping platform or web developer portfolio.</p>
-                <div class="buttons flex s-around">
-                    <a href="https://github.com/paaskall/ModernShop" target="_blank"
-                        class="btn mx-1 m-top">GitHub</a>
-                    <a href="#" target="_blank"
-                        class="btn m-top live">Live Link</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="m-b-1">
-        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
-        <div class="contact-container flex s-around items-centers">
-            <div class="form" id="contactForm">
-                <form action="" id="contactFrom">
-                    <div class="name form-div">
-                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
-                    </div>
-                    <div class="email form-div">
-                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
-                            required>
-                    </div>
-                    <div class="phone form-div">
-                        <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone"
-                            required>
-                    </div>
-                    <div class="textarea form-div">
-                        <textarea name="text" id="textarea" cols="30" rows="10" class="poppins"
-                            placeholder="Enter Messages"></textarea>
-                    </div>
-                    <button type="submit" class="btn poppins" id="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer id="footer">
-        <ul class="flex s-center w-80 m-auto my-2 res">
-            <li><a href="#home" class="poppinss">Home</a></li>
-            <li><a href="#about" class="poppinss">About</a></li>
-            <li><a href="#services" class="poppinss">Services</a></li>
-            <li><a href="https://github.com/paaskall" class="poppinss">Projects</a></li>
+<!-- Desktop Navbar -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 hidden md:block">
+    <div class="max-w-7xl mx-auto px-8 h-16 flex items-center justify-between">
+        <a href="#home" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:var(--accent);text-decoration:none;letter-spacing:-0.02em;">
+            PAW<span style="color:var(--text-muted);font-weight:300;">.</span>
+        </a>
+        <ul class="flex items-center gap-8 list-none">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <ul class="flex s-center w-80 font-awesome ">
-            <a href="https://www.linkedin.com/in/paskal-arvito-weni" target="_blank">
-                <li><i class="fa-brands fa-linkedin-in"></i></li>
-            </a>
-            <a href="https://www.instagram.com/paskalll_/" target="_blank">
-                <li><i class="fa-brands fa-instagram"></i></li>
-            </a>
-            <a href="https://youtube.com/@paskaliitho1001?si=5e7fOlJ91KGsKHz0" target="_blank">
-                <li><i class="fa-brands fa-youtube"></i></li>
-            </a>
-        </ul>
+        <a href="CV_Paskal_Arvito_Weni_2026.pdf" target="_blank" class="btn-primary" style="font-size:0.8rem;padding:0.55rem 1.25rem;">
+            <i class="fas fa-download" style="font-size:0.75rem;"></i> Resume
+        </a>
+    </div>
+</nav>
 
-    </footer>
+<!-- Mobile Bottom Navigation -->
+<div id="bottom-nav">
+    <div class="bottom-nav-inner">
+        <a href="#home" class="bottom-nav-link"><i class="fas fa-house"></i></a>
+        <a href="#about" class="bottom-nav-link"><i class="fas fa-user"></i></a>
+        <a href="#services" class="bottom-nav-link"><i class="fas fa-rocket"></i></a>
+        <a href="#projects" class="bottom-nav-link"><i class="fas fa-code"></i></a>
+        <a href="#contact" class="bottom-nav-link"><i class="fas fa-envelope"></i></a>
+    </div>
+</div>
 
-    <div id="scroll-top" onclick="scrolltop()">
-        <span><i class="fa-solid fa-arrow-up"></i></span>
+<!-- ===== HERO ===== -->
+<section id="home">
+    <!-- Background glows -->
+    <div class="accent-glow" style="width:600px;height:600px;background:var(--accent);top:-200px;left:-200px;"></div>
+    <div class="accent-glow" style="width:400px;height:400px;background:#0066ff;bottom:-100px;right:5%;opacity:0.08;"></div>
+
+    <div class="hero-left" style="animation: fadeInLeft 0.9s ease both;">
+        <div class="hero-label">
+            Software Developer
+        </div>
+        <h1 class="hero-title">
+            Hi, I'm<br>
+            <span class="highlight">Paskal Arvito</span><br>
+            <span style="color:var(--text-muted);font-weight:300;">Weni</span>
+        </h1>
+        <p class="hero-sub" id="typedSub">Building modern web experiences.</p>
+        <div class="hero-btns">
+            <a href="https://github.com/paaskall" target="_blank" class="btn-primary">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/paskal-arvito-weni/" target="_blank" class="btn-outline">
+                <i class="fab fa-linkedin"></i> Let's Talk
+            </a>
+        </div>
+        <div class="skill-tags" style="margin-top:2rem;">
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Mobile App</span>
+            <span class="skill-tag">RESTful API</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">MySQL</span>
+        </div>
     </div>
 
-</body>
-<script src="/script.js"></script>
+    <div class="hero-img-wrap" style="animation: fadeInRight 0.9s ease both; animation-delay: 0.2s;">
+        <div class="hero-ring position-absolute"></div>
+        <div class="hero-ring hero-ring-2 position-absolute"></div>
+        <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+            <div style="position:absolute;width:340px;height:340px;border-radius:50%;border:1px solid rgba(0,255,135,0.2);animation:spin-slow 12s linear infinite;"></div>
+            <div style="position:absolute;width:280px;height:280px;border-radius:50%;border:1px dashed rgba(0,255,135,0.15);animation:spin-slow 8s linear infinite reverse;"></div>
+            <img src="Foto(2).jpg" alt="Paskal Arvito Weni" class="hero-img">
+        </div>
+    </div>
+</section>
 
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <div class="about-grid max-w-7xl mx-auto">
+        <div class="about-img-wrap reveal-left">
+            <img src="Foto(1).jpg" alt="Paskal Arvito Weni">
+        </div>
+        <div class="reveal-right delay-1">
+            <span class="section-label">// about me</span>
+            <h2 class="section-title">Who I Am</h2>
+            <span class="section-divider"></span>
+            <p style="color:var(--text-muted);line-height:1.85;font-size:0.95rem;margin-bottom:1.5rem;">
+                A self-taught Software Developer from <strong style="color:var(--text);">Politeknik Negeri Ujung Pandang</strong> (2022–2026), committed to building clean, fast, and meaningful digital products. From web apps to mobile development and machine learning - I approach every project with precision and purpose.
+            </p>
+            <p style="color:var(--text-muted);line-height:1.85;font-size:0.95rem;margin-bottom:2rem;">
+                Four years of consistent learning, shipping projects, and growing - always curious, always building something new.
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Years Learning</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Curiosity</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Committed</div>
+                </div>
+            </div>
+
+            <a href="CV_Paskal_Arvito_Weni_2026.pdf" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:1rem;">
+                <i class="fas fa-file-pdf"></i> Download CV
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+    <div class="max-w-7xl mx-auto">
+        <div class="reveal" style="text-align:center;margin-bottom:3rem;">
+            <h2 class="section-title">Services</h2>
+            <span class="section-divider" style="margin:1.25rem auto 0;"></span>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal delay-1">
+                <div class="service-icon">
+                    <!-- Web / Code icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-desc">Building clean, fast, and scalable websites for startups and businesses. From landing pages to full-stack web apps using modern frameworks like Laravel and RESTful APIs.</p>
+            </div>
+            <div class="service-card reveal delay-2">
+                <div class="service-icon">
+                    <!-- Mobile phone icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Mobile App Development</h3>
+                <p class="service-desc">Developing intuitive and performant mobile applications with modern UI/UX principles. Focused on delivering smooth cross-platform experiences that solve real user problems.</p>
+            </div>
+            <div class="service-card reveal delay-3">
+                <div class="service-icon">
+                    <!-- CPU / brain / ML icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Machine Learning</h3>
+                <p class="service-desc">Exploring data-driven solutions through machine learning models — from data preprocessing and model training to deployment. Turning raw data into actionable insights.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="max-w-7xl mx-auto">
+        <div class="reveal" style="text-align:center;margin-bottom:3rem;">
+            <h2 class="section-title">Projects</h2>
+            <span class="section-divider" style="margin:1.25rem auto 0;"></span>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card reveal delay-1">
+                <div class="project-img-wrap">
+                    <img src="visitor.png" alt="Library Visitors Management">
+                    <span class="project-tag">Laravel</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Library Visitors Management</h3>
+                    <p class="project-desc">A web-based system built with Laravel to streamline library visitor data management, featuring digital recording, activity monitoring, and secure structured data storage.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/paaskall/LibraryVisitorsManagement" target="_blank" class="project-link link-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link link-live">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-2">
+                <div class="project-img-wrap">
+                    <img src="browser (1).png" alt="RESTful API Jagoan Terbang">
+                    <span class="project-tag">RESTful API</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">RESTful API — Jagoan Terbang</h3>
+                    <p class="project-desc">An air transportation API managing flight bookings, schedule information, and user data management — built for speed, security, and easy third-party integration.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/paaskall/RestFullAPI-JagoanTerbang" target="_blank" class="project-link link-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link link-live">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal delay-3">
+                <div class="project-img-wrap">
+                    <img src="shopping.png" alt="Modern Shop">
+                    <span class="project-tag">HTML/CSS/JS</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Modern Shop</h3>
+                    <p class="project-desc">A responsive e-commerce web app built with pure HTML, CSS, and JavaScript — showcasing a modern shopping experience with interactive UI and clean aesthetics.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/paaskall/ModernShop" target="_blank" class="project-link link-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link link-live">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="max-w-7xl mx-auto">
+        <div class="reveal" style="text-align:center;margin-bottom:3rem;">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-divider" style="margin:1.25rem auto 0;"></span>
+        </div>
+        <div class="contact-grid">
+            <div class="reveal-left">
+                <p style="color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin-bottom:2rem;">
+                    I'm open to freelance projects, collaborations, or just a friendly chat about tech and design. Drop me a message!
+                </p>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <div>
+                        <div style="font-family:'Space Grotesk',sans-serif;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">LinkedIn</div>
+                        <a href="https://www.linkedin.com/in/paskal-arvito-weni" target="_blank" style="color:var(--accent);text-decoration:none;font-size:0.9rem;">paskal-arvito-weni</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <div>
+                        <div style="font-family:'Space Grotesk',sans-serif;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">GitHub</div>
+                        <a href="https://github.com/paaskall" target="_blank" style="color:var(--accent);text-decoration:none;font-size:0.9rem;">@paaskall</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                    <div>
+                        <div style="font-family:'Space Grotesk',sans-serif;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">Instagram</div>
+                        <a href="https://www.instagram.com/paskalll_/" target="_blank" style="color:var(--accent);text-decoration:none;font-size:0.9rem;">@paskalll_</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon"><i class="fab fa-youtube"></i></div>
+                    <div>
+                        <div style="font-family:'Space Grotesk',sans-serif;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;">YouTube</div>
+                        <a href="https://youtube.com/@paskaliitho1001" target="_blank" style="color:var(--accent);text-decoration:none;font-size:0.9rem;">@paskaliitho1001</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-right delay-2">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" id="nameInput" class="form-input" placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="emailInput" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" id="phoneInput" class="form-input" placeholder="+62 xxx xxxx xxxx">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea id="messageInput" class="form-input" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-grid max-w-7xl mx-auto">
+        <div>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:var(--accent);">PAW.</span>
+            <p style="color:var(--text-muted);font-size:0.8rem;margin-top:0.25rem;">Paskal Arvito Weni</p>
+        </div>
+        <nav class="footer-links">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#services" class="footer-link">Services</a>
+            <a href="#projects" class="footer-link">Projects</a>
+            <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/paskal-arvito-weni" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/paskalll_/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@paskaliitho1001" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="https://github.com/paaskall" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto" style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);text-align:center;">
+        <p style="color:var(--text-muted);font-size:0.8rem;">
+            &copy; 2026 Paskal Arvito Weni. Built with care &amp; lots of coffee.
+        </p>
+    </div>
+</footer>
+
+<!-- Scroll to top -->
+<div id="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+// ===== CURSOR DOT =====
+const cursorDot = document.getElementById('cursorDot');
+document.addEventListener('mousemove', (e) => {
+    cursorDot.style.left = e.clientX + 'px';
+    cursorDot.style.top = e.clientY + 'px';
+});
+document.querySelectorAll('a,button,.btn-primary,.btn-outline,.service-card,.project-card').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursorDot.style.width = '20px'; cursorDot.style.height = '20px'; cursorDot.style.opacity = '0.5'; });
+    el.addEventListener('mouseleave', () => { cursorDot.style.width = '8px'; cursorDot.style.height = '8px'; cursorDot.style.opacity = '1'; });
+});
+
+// ===== THEME TOGGLE =====
+const html = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('theme') || 'dark';
+html.setAttribute('data-theme', savedTheme);
+
+themeToggle.addEventListener('click', () => {
+    const curr = html.getAttribute('data-theme');
+    const next = curr === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    // add a tiny bounce animation
+    themeToggle.style.transform = window.innerWidth < 768 ? 'scale(0.92)' : 'translateY(-50%) scale(0.92)';
+    setTimeout(() => {
+        themeToggle.style.transform = window.innerWidth < 768 ? 'scale(1)' : 'translateY(-50%)';
+    }, 140);
+});
+
+// ===== NAVBAR SCROLL =====
+const navbar = document.getElementById('navbar');
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y > 80) {
+        navbar.classList.add('scrolled');
+        navbar.style.transform = y > lastScroll && y > 200 ? 'translateY(-100%)' : 'translateY(0)';
+    } else {
+        navbar.classList.remove('scrolled');
+        navbar.style.transform = 'translateY(0)';
+    }
+    lastScroll = y;
+    // scroll-top btn
+    const st = document.getElementById('scroll-top');
+    if (y > 400) { st.style.display = 'flex'; } else { st.style.display = 'none'; }
+});
+
+// ===== SCROLL TO TOP =====
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+            const offset = target.offsetTop - 70;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+    });
+});
+
+// ===== SCROLL REVEAL =====
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+
+// ===== CONTACT FORM =====
+document.getElementById('contactForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const name = document.getElementById('nameInput').value;
+    const email = document.getElementById('emailInput').value;
+    const message = document.getElementById('messageInput').value;
+    if (!email || !message) { showNotif('Please fill in email and message!', 'error'); return; }
+    showNotif(`Thanks ${name || 'there'}! Message sent successfully.`, 'success');
+    e.target.reset();
+});
+
+function showNotif(msg, type) {
+    const old = document.querySelector('.notification');
+    if (old) old.remove();
+    const n = document.createElement('div');
+    n.className = 'notification';
+    n.style.borderColor = type === 'success' ? 'var(--accent)' : '#ff5555';
+    n.innerHTML = `<i class="${type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'}" style="color:${type === 'success' ? 'var(--accent)' : '#ff5555'};margin-right:0.5rem;"></i>${msg}`;
+    document.body.appendChild(n);
+    requestAnimationFrame(() => n.classList.add('show'));
+    setTimeout(() => { n.classList.remove('show'); setTimeout(() => n.remove(), 300); }, 4500);
+}
+
+// ===== TYPING ANIMATION =====
+const phrases = ['Building modern web experiences.', 'Crafting clean, fast applications.', 'Designing with purpose & passion.'];
+let pi = 0, ci = 0, deleting = false;
+const subEl = document.getElementById('typedSub');
+
+function type() {
+    const phrase = phrases[pi];
+    if (!deleting) {
+        subEl.textContent = phrase.slice(0, ++ci);
+        if (ci === phrase.length) { deleting = true; setTimeout(type, 2000); return; }
+    } else {
+        subEl.textContent = phrase.slice(0, --ci);
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+    }
+    setTimeout(type, deleting ? 40 : 80);
+}
+setTimeout(type, 1200);
+</script>
+</body>
 </html>
